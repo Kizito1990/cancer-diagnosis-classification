@@ -1,0 +1,11 @@
+services: 
+  - type: web 
+    name: cancer-diagnosis-api 
+    env: python 
+    plan: free 
+    region: frankfurt 
+    buildCommand: pip install -r requirements.txt 
+    startCommand: gunicorn api.main:app -k uvicorn.workers.UvicornWorker 
+    envVars: 
+      - key: PYTHON_VERSION 
+        value: 3.10 
