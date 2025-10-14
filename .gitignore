@@ -106,3 +106,7 @@ docs/_build/
 
 # PyBuilder
 target/
+virtual/
+__pycache__/
+*.pyc
+.env
