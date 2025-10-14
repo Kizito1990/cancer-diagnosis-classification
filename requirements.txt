@@ -14,3 +14,4 @@ monai>=0.8.0
 dagshub>=0.1.7
 nibabel>=3.2.1
 SimpleITK>=2.1.1
+uvicorn>=0.22.0
